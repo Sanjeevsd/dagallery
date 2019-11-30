@@ -42,4 +42,13 @@
         android:layout_marginLeft="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tanjito_view" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tanjito_view"
+        app:layout_constraintStart_toStartOf="@+id/tanjito_view"
+        app:layout_constraintTop_toTopOf="@id/tanjito_view"
+        app:srcCompat="@drawable/cross" />
 </androidx.constraintlayout.widget.ConstraintLayout>
