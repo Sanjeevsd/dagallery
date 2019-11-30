@@ -25,12 +25,13 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:color/holo_green_light" />
+                android:background="@drawable/da" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="0dp"
-                android:textSize="20sp"
+                android:textSize="35sp"
+                android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:elevation="8dp"
                 android:textAlignment="center"
@@ -60,18 +61,20 @@
 
             <ImageView
                 android:id="@+id/imageView7"
+                android:background="@drawable/sketch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:color/holo_orange_dark" />
+                 />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="0dp"
-                android:textSize="20sp"
+                android:textSize="35sp"
+                android:textColor="@android:color/white"
                 android:elevation="8dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
@@ -106,14 +109,15 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:color/holo_purple" />
+                android:background="@drawable/panting" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Paintings"
-                android:textSize="20sp"
+                android:textSize="35sp"
+                android:textColor="@android:color/white"
                 android:elevation="8dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
@@ -146,7 +150,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:color/holo_red_light" />
+                android:background="@drawable/grafiti" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -157,8 +161,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 android:text="Graffiti"
-                android:textSize="20sp"
+
                 android:elevation="8dp"
+                android:textSize="35sp"
+                android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 app:layout_constraintStart_toStartOf="parent"

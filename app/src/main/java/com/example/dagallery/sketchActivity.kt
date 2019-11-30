@@ -10,4 +10,5 @@ class sketchActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sketch)
         supportActionBar?.title="Sketch"
     }
+    
 }
