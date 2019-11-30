@@ -6,6 +6,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_upload.*
 import java.util.*
@@ -24,6 +27,14 @@ class uploadActivity : AppCompatActivity() {
     }
     private fun uploadpicure(){
         val price=price_picture.text.toString()
+        val fileid = UUID.randomUUID().toString()
+        val ref=FirebaseDatabase.getInstance().getReference("/dataimage/$fileid")
+        val uid=FirebaseAuth.getInstance().uid.toString()
+        val dataup=datammodel(price,imageurl,uid)
+        ref.setValue(dataup)
+            .addOnSuccessListener {
+                Toast.makeText(this,"Uploaded Successfully",Toast.LENGTH_LONG).show()
+            }
 
     }
     private  fun selectpicture(){

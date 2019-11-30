@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".digitalartActivity">
+    tools:context=".digitalartActivity"
+    android:background="@android:color/white">
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/painting_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
